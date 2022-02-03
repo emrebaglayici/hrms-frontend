@@ -2,6 +2,7 @@ import React from "react";
 import {Grid,Image} from "semantic-ui-react";
 import homeimage from "../images/home.jpg";
 import Employees from "../pages/Employees";
+import Employers from "../pages/Employers";
 import Footer from "./Footer";
 import RecentlyAdded from "./RecentlyAdded";
 
@@ -17,6 +18,7 @@ export default function HomeContainer() {
       </Grid>
       <RecentlyAdded />
       <Employees/>
+      <Employers/>
       <Footer/>
     </div>
   );
