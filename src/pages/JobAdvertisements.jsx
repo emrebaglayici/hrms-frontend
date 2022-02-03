@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Card, Image } from "semantic-ui-react";
+import { Button, Card } from "semantic-ui-react";
 import JobAdvertisementService from "../services/jobAdvertisementService";
 
 export default function JobAdvertisements() {
