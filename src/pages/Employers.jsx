@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Card, Icon } from "semantic-ui-react";
+import { Button, Card } from "semantic-ui-react";
 import EmployerService from "../services/employerService";
 
 export default function Employers() {
@@ -12,6 +12,7 @@ export default function Employers() {
   });
   return (
     <div>
+      <h2 style={{marginTop:"0.5em"}}>All Job Employers</h2>
       <Card.Group className="custom">
         {employers.map((employer) => (
           <Card key={employer.id}>

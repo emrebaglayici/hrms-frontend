@@ -28,9 +28,11 @@ a.item {
 }
 
 *:not(i) {
-  font-family: dystopian, sans-serif !important;
-
+  font-family: new-order, sans-serif !important;
   font-weight: 600 !important;
-
   font-style: normal !important;
+}
+
+.ui form {
+  margin-top: 20px;
 }

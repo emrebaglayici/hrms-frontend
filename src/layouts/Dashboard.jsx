@@ -1,15 +1,16 @@
 import React from 'react';
-import { Grid } from "semantic-ui-react";
-import JobAdvertisements from '../pages/JobAdvertisements';
+import { Grid,Image } from "semantic-ui-react";
+import homeimage from "../images/home.jpg";
+import RecentlyAdded from './RecentlyAdded';
 
 export default function Dashboard() {
   return <div>
       <Grid>
-        <Grid.Row>
-          <Grid.Column width={16}>
-            <JobAdvertisements/>
-          </Grid.Column>
-        </Grid.Row>
+        <Grid.Column width={16}>
+          <Image src={homeimage} />
+          <h2>Recently Added Job Advertisements</h2>
+        </Grid.Column>
       </Grid>
+      <RecentlyAdded/>
   </div>;
 }
