@@ -9,7 +9,7 @@ export default function KodlamaIoCityDropdown({...props}) {
   const [cities,setCities]=useState([]);
   useEffect(()=>{
       let citiesService=new cityService();
-      citiesService.getCities().then((result)=>setCities(result.data.data));
+      citiesService.getAll().then((result)=>setCities(result.data.data));
   });
   return (
     <FormField error={meta.touched && !!meta.error}>

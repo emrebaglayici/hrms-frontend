@@ -5,6 +5,7 @@ import RecentlyAdded from './RecentlyAdded';
 
 export default function Dashboard() {
   return <div>
+    
       <Grid>
         <Grid.Column width={16}>
           <Image src={homeimage} />

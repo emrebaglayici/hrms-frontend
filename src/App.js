@@ -9,14 +9,19 @@ import JobAdvertisements from "./pages/JobAdvertisements";
 import Employees from "./pages/Employees";
 import Employers from "./pages/Employers";
 import JobPostings from "./pages/JobPostings";
+import RegisterEmployer from "./layouts/RegisterEmployer";
 
 function App() {
   return (
+    
     <div className="App">
+     
       <Container className="main">
+      
         <Navi />
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/registerEmployer" element={<RegisterEmployer/>}/>
           <Route exact path="/JobAdvertisements" element={<JobAdvertisements />} />
           <Route exact path="/Employees" element={<Employees />} />
           <Route exact path="/Employers" element={<Employers />} />
